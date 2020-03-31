@@ -7,8 +7,8 @@ enum ConversionType {
 
 typedef enum ConversionType ConversionType;
 
-float ConvertTemperature(float, ConversionType);
 void ShowConversion(float, ConversionType);
+float ConvertTemperature(float, ConversionType);
 
 
 void RunANSICBasics02(void)
