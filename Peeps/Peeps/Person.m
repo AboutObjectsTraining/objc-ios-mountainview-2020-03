@@ -46,4 +46,9 @@
     _age = newValue;
 }
 
+- (NSString *)description
+{
+    return [NSString stringWithFormat:@"%@", [self fullName]];
+}
+
 @end

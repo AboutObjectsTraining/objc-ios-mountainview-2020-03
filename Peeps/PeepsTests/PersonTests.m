@@ -35,4 +35,32 @@
     NSLog(@"full name is %@", [fred fullName]);
 }
 
+- (void)testArrayOfPerson {
+    Person *p1 = [Person personWithFirstName:@"Joe" lastName:@"Blank"];
+    Person *p2 = [Person personWithFirstName:@"Sally" lastName:@"Johnson"];
+    Person *p3 = [Person personWithFirstName:@"Gil" lastName:@"Amelio"];
+    
+    NSArray *peeps = [NSArray arrayWithObjects:p1, p2, p3, nil];
+    
+    for (Person *currPerson in peeps) {
+        NSLog(@"%@", currPerson);
+    }
+    
+    for (Person *currPerson in [peeps reverseObjectEnumerator]) {
+        NSLog(@"%@", currPerson);
+    }
+}
+
+- (void)testArrayLiterals {
+    NSArray *peeps = @[
+        [Person personWithFirstName:@"Joe" lastName:@"Blank"],
+        [Person personWithFirstName:@"Sally" lastName:@"Johnson"],
+        [Person personWithFirstName:@"Gil" lastName:@"Amelio"]
+    ];
+    NSLog(@"%@", peeps);
+    
+    [peeps makeObjectsPerformSelector:@selector(setLastName:) withObject:@"Jones"];
+    NSLog(@"%@", peeps);
+}
+
 @end
