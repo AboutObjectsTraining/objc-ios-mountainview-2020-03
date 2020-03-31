@@ -63,4 +63,11 @@
     NSLog(@"%@", peeps);
 }
 
+- (void)testCopyingBehavior {
+    Person *p1 = [Person personWithFirstName:@"Joe" lastName:@"Blank"];
+//    [p1 performSelector:@selector(copyWithZone:)];
+    Person *p2 = [p1 copy];
+    NSLog(@"%@", p2);
+}
+
 @end

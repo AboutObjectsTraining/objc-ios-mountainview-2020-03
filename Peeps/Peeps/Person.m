@@ -51,4 +51,9 @@
     return [NSString stringWithFormat:@"%@", [self fullName]];
 }
 
+- (id)copyWithZone:(NSZone *)zone {
+    // Kinda bogus implementation -- doesn't produce a real copy.
+    return self;
+}
+
 @end
