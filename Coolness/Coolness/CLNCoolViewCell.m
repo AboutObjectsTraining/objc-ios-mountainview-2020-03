@@ -17,6 +17,17 @@ const UIEdgeInsets CLNTextInsets = {
 
 @implementation CLNCoolViewCell
 
+- (instancetype)initWithFrame:(CGRect)frame {
+    if (!(self = [super initWithFrame:frame])) return self;
+    
+    self.layer.borderWidth = 3;
+    self.layer.borderColor = UIColor.whiteColor.CGColor;
+    self.layer.cornerRadius = 10;
+    self.layer.masksToBounds = YES;
+    
+    return self;
+}
+
 - (void)setHighlighted:(BOOL)highlighted {
     _highlighted = highlighted;
     self.alpha = highlighted ? 0.5 : 1.0;
