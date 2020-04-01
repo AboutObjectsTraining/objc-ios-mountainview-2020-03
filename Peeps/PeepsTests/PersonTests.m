@@ -19,8 +19,11 @@
 
 - (void)testFullName {
     Person *fred = [[Person alloc] init];
-    [fred setFirstName:@"Fred"];
-    [fred setLastName:@"Smith"];
+    
+    fred.firstName = @"Fred";
+    fred.lastName = @"Smith";
+//    [fred setFirstName:@"Fred"];
+//    [fred setLastName:@"Smith"];
     
     NSLog(@"full name is %@", [fred fullName]);
 }

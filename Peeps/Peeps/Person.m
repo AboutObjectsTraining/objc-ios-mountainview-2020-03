@@ -21,34 +21,12 @@
     return self;
 }
 
-- (NSString *)firstName {
-    return _firstName;
-}
-- (void)setFirstName:(NSString *)newValue {
-    _firstName = [newValue copy];
-}
-
-- (NSString *)lastName {
-    return _lastName;
-}
-- (void)setLastName:(NSString *)newValue {
-    _lastName = [newValue copy];
-}
-
 - (NSString *)fullName {
-    return [NSString stringWithFormat:@"%@ %@", [self firstName], [self lastName]];
+    return [NSString stringWithFormat:@"%@ %@", self.firstName, self.lastName];
 }
 
-- (NSInteger)age {
-    return _age;
-}
-- (void)setAge:(NSInteger)newValue {
-    _age = newValue;
-}
-
-- (NSString *)description
-{
-    return [NSString stringWithFormat:@"%@", [self fullName]];
+- (NSString *)description {
+    return [NSString stringWithFormat:@"%@", self.fullName];
 }
 
 - (id)copyWithZone:(NSZone *)zone {

@@ -3,12 +3,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface Person : NSObject <NSCopying> {
-@private
-    NSString *_firstName;
-    NSString *_lastName;
-    NSInteger _age;
-}
+@interface Person : NSObject <NSCopying>
 
 + (instancetype)personWithFirstName:(NSString *)aFirstName
                            lastName:(NSString *)aLastName;
@@ -16,20 +11,9 @@
 - (instancetype)initWithFirstName:(NSString *)aFirstName
                          lastName:(NSString *)aLastName;
 
-- (NSString *)firstName;
-- (void)setFirstName:(NSString *)newValue;
-
-- (NSString *)lastName;
-- (void)setLastName:(NSString *)newValue;
-
-- (NSString *)fullName;
-
-- (NSInteger)age;
-- (void)setAge:(NSInteger)newValue;
-
-
-//- (id)initWithContentsOfFile:(NSString *)path
-//                    encoding:(NSStringEncoding)enc
-//                       error:(NSError **)error;
+@property (copy, nonatomic) NSString *firstName;
+@property (copy, nonatomic) NSString *lastName;
+@property (readonly, nonatomic) NSString *fullName;
+@property (assign, nonatomic) NSInteger age;
 
 @end
