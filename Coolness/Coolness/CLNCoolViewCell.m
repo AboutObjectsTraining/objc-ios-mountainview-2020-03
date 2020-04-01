@@ -71,9 +71,10 @@ const UIEdgeInsets CLNTextInsets = {
 }
 
 - (void)animateBounceWithDuration:(NSTimeInterval)duration size:(CGSize)size {
+    typeof(self) __weak weakSelf = self;
     [UIView animateWithDuration:duration
-                     animations:^{ [self configureAnimationWithSize:size]; }
-                     completion:^(BOOL finished) { self.transform = CGAffineTransformIdentity; }];
+                     animations:^{ [weakSelf configureAnimationWithSize:size]; }
+                     completion:^(BOOL finished) { weakSelf.transform = CGAffineTransformIdentity; }];
 }
 
 // MARK: - Drawing and resizing

@@ -3,8 +3,11 @@
 
 #import <Foundation/Foundation.h>
 
+@class Person;
+
 @interface Dog : NSObject
 
 @property (copy, nonatomic) NSString *name;
+@property (weak, nonatomic) Person *owner;
 
 @end
