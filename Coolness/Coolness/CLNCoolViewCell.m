@@ -20,12 +20,23 @@ const UIEdgeInsets CLNTextInsets = {
 - (instancetype)initWithFrame:(CGRect)frame {
     if (!(self = [super initWithFrame:frame])) return self;
     
+    [self configureLayer];
+    [self configureGestureRecognizers];
+    
+    return self;
+}
+
+- (void)configureGestureRecognizers {
+    UITapGestureRecognizer *recognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(bounce)];
+    recognizer.numberOfTapsRequired = 2;
+    [self addGestureRecognizer:recognizer];
+}
+
+- (void)configureLayer {
     self.layer.borderWidth = 3;
     self.layer.borderColor = UIColor.whiteColor.CGColor;
     self.layer.cornerRadius = 10;
     self.layer.masksToBounds = YES;
-    
-    return self;
 }
 
 - (void)setHighlighted:(BOOL)highlighted {
@@ -43,6 +54,26 @@ const UIEdgeInsets CLNTextInsets = {
         NSFontAttributeName: [UIFont boldSystemFontOfSize:20],
         NSForegroundColorAttributeName: UIColor.whiteColor,
     };
+}
+
+// MARK: - Animation
+
+- (void)bounce {
+    NSLog(@"In %s", __func__);
+    [self animateBounceWithDuration:1 size:CGSizeMake(120, 240)];
+}
+
+- (void)configureAnimationWithSize:(CGSize)size {
+    [UIView setAnimationRepeatAutoreverses:YES];
+    [UIView setAnimationRepeatCount:5];
+    CGAffineTransform translation = CGAffineTransformMakeTranslation(size.width, size.height);
+    self.transform = CGAffineTransformRotate(translation, M_PI_2);
+}
+
+- (void)animateBounceWithDuration:(NSTimeInterval)duration size:(CGSize)size {
+    [UIView animateWithDuration:duration
+                     animations:^{ [self configureAnimationWithSize:size]; }
+                     completion:^(BOOL finished) { self.transform = CGAffineTransformIdentity; }];
 }
 
 // MARK: - Drawing and resizing

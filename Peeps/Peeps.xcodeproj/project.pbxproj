@@ -13,6 +13,9 @@
 		B4D1F3E52433AD5E00BF0F67 /* Person.h in Headers */ = {isa = PBXBuildFile; fileRef = B4D1F3E32433AD5E00BF0F67 /* Person.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B4D1F3E62433AD5E00BF0F67 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = B4D1F3E42433AD5E00BF0F67 /* Person.m */; };
 		B4FFD2DE2433E718009CB277 /* ClassClusterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B4FFD2DD2433E718009CB277 /* ClassClusterTests.m */; };
+		B4FFD30B24352FE5009CB277 /* BlockLiteralTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B4FFD30A24352FE5009CB277 /* BlockLiteralTests.m */; };
+		B4FFD30E24353E1E009CB277 /* Dog.h in Headers */ = {isa = PBXBuildFile; fileRef = B4FFD30C24353E1E009CB277 /* Dog.h */; };
+		B4FFD30F24353E1E009CB277 /* Dog.m in Sources */ = {isa = PBXBuildFile; fileRef = B4FFD30D24353E1E009CB277 /* Dog.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,9 @@
 		B4D1F3E32433AD5E00BF0F67 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		B4D1F3E42433AD5E00BF0F67 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		B4FFD2DD2433E718009CB277 /* ClassClusterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClassClusterTests.m; sourceTree = "<group>"; };
+		B4FFD30A24352FE5009CB277 /* BlockLiteralTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlockLiteralTests.m; sourceTree = "<group>"; };
+		B4FFD30C24353E1E009CB277 /* Dog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Dog.h; sourceTree = "<group>"; };
+		B4FFD30D24353E1E009CB277 /* Dog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Dog.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +87,8 @@
 				B4D1F3CD2433A8CD00BF0F67 /* Info.plist */,
 				B4D1F3E32433AD5E00BF0F67 /* Person.h */,
 				B4D1F3E42433AD5E00BF0F67 /* Person.m */,
+				B4FFD30C24353E1E009CB277 /* Dog.h */,
+				B4FFD30D24353E1E009CB277 /* Dog.m */,
 			);
 			path = Peeps;
 			sourceTree = "<group>";
@@ -90,6 +98,7 @@
 			children = (
 				B4D1F3D72433A8CE00BF0F67 /* PersonTests.m */,
 				B4FFD2DD2433E718009CB277 /* ClassClusterTests.m */,
+				B4FFD30A24352FE5009CB277 /* BlockLiteralTests.m */,
 				B4D1F3D92433A8CE00BF0F67 /* Info.plist */,
 			);
 			path = PeepsTests;
@@ -102,6 +111,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4FFD30E24353E1E009CB277 /* Dog.h in Headers */,
 				B4D1F3DA2433A8CE00BF0F67 /* Peeps.h in Headers */,
 				B4D1F3E52433AD5E00BF0F67 /* Person.h in Headers */,
 			);
@@ -204,6 +214,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4FFD30F24353E1E009CB277 /* Dog.m in Sources */,
 				B4D1F3E62433AD5E00BF0F67 /* Person.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -213,6 +224,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B4D1F3D82433A8CE00BF0F67 /* PersonTests.m in Sources */,
+				B4FFD30B24352FE5009CB277 /* BlockLiteralTests.m in Sources */,
 				B4FFD2DE2433E718009CB277 /* ClassClusterTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
