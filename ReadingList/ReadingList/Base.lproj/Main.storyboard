@@ -66,8 +66,12 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Reading List" id="Oga-zb-iMr"/>
+                    <connections>
+                        <outlet property="storeController" destination="zSZ-LU-sFa" id="7Tj-nD-w9B"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E0y-yB-dEG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <customObject id="zSZ-LU-sFa" customClass="RLMStoreController"/>
             </objects>
             <point key="canvasLocation" x="-1274" y="-15"/>
         </scene>
@@ -196,6 +200,12 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="firstNameLabel" destination="FxT-cS-TPb" id="z2g-w0-CVh"/>
+                        <outlet property="lastNameLabel" destination="2MF-GT-1Fb" id="AGe-1e-8Ld"/>
+                        <outlet property="titleLabel" destination="lJm-ne-Bpv" id="pNY-q8-ydc"/>
+                        <outlet property="yearLabel" destination="JGi-Vm-bOs" id="3V8-o8-2DX"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SRv-ZI-Ne8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
