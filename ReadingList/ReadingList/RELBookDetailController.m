@@ -1,13 +1,12 @@
 // Copyright (C) 2020 About Objects, Inc. All Rights Reserved.
 // See LICENSE.txt for this project's licensing information.
 
-#import "RELSceneDelegate.h"
+#import "RELBookDetailController.h"
 
-@interface RELSceneDelegate ()
+@implementation RELBookDetailController
 
-@end
-
-@implementation RELSceneDelegate
-
+- (IBAction)cancel:(UIStoryboardSegue *)sender {
+    
+}
 
 @end

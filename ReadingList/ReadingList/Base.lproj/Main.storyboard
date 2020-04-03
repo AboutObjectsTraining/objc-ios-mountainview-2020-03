@@ -25,44 +25,41 @@
         <!--Reading List-->
         <scene sceneID="dy5-pf-scv">
             <objects>
-                <tableViewController id="y9s-ca-5jH" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="60" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="ySO-kr-V7R">
+                <tableViewController id="y9s-ca-5jH" customClass="RELReadingListController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="ySO-kr-V7R">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <sections>
-                            <tableViewSection id="rM8-V2-N8f">
-                                <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="Wo0-pR-pUn" detailTextLabel="vHm-z0-Zns" style="IBUITableViewCellStyleSubtitle" id="XtH-x3-T07">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="60"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="XtH-x3-T07" id="2e6-jL-nsg">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Book Cell" textLabel="Wo0-pR-pUn" detailTextLabel="vHm-z0-Zns" style="IBUITableViewCellStyleSubtitle" id="XtH-x3-T07">
+                                <rect key="frame" x="0.0" y="28" width="414" height="60"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="XtH-x3-T07" id="2e6-jL-nsg">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="A Midsummer Night's Dream" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Wo0-pR-pUn">
+                                            <rect key="frame" x="20" y="10" width="244.5" height="23"/>
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="A Midsummer Night's Dream" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Wo0-pR-pUn">
-                                                    <rect key="frame" x="20" y="10" width="244.5" height="23"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="2012  William Shakespeare" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vHm-z0-Zns">
-                                                    <rect key="frame" x="20" y="33" width="173" height="17"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="vl5-TR-Mj9" kind="show" id="YWg-Zs-NdI"/>
-                                        </connections>
-                                    </tableViewCell>
-                                </cells>
-                            </tableViewSection>
-                        </sections>
+                                            <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="2012  William Shakespeare" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vHm-z0-Zns">
+                                            <rect key="frame" x="20" y="33" width="173" height="17"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="vl5-TR-Mj9" kind="show" id="YWg-Zs-NdI"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <sections/>
                         <connections>
                             <outlet property="dataSource" destination="y9s-ca-5jH" id="z3P-At-Mnq"/>
                             <outlet property="delegate" destination="y9s-ca-5jH" id="yQK-ci-aaI"/>
@@ -77,7 +74,7 @@
         <!--Book Detail-->
         <scene sceneID="Nto-Rg-uBA">
             <objects>
-                <tableViewController title="Book Detail" id="vl5-TR-Mj9" sceneMemberID="viewController">
+                <tableViewController title="Book Detail" id="vl5-TR-Mj9" customClass="RELBookDetailController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="Iyi-3i-pNJ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -360,11 +357,20 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Edit Book" id="mdh-r7-vak">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="6qH-E7-Saa"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="36W-BP-X18"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="6qH-E7-Saa">
+                            <connections>
+                                <segue destination="vwW-b3-bIA" kind="unwind" unwindAction="cancel:" id="yuB-V9-YNd"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="36W-BP-X18">
+                            <connections>
+                                <segue destination="vwW-b3-bIA" kind="unwind" unwindAction="done:" id="WRY-mR-saB"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1mz-Vs-xrx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="vwW-b3-bIA" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1110" y="-15"/>
         </scene>
