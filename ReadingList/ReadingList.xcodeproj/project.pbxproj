@@ -35,6 +35,7 @@
 		B4CB358B2437B6E5005D28A8 /* RELEditBookController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4CB358A2437B6E5005D28A8 /* RELEditBookController.m */; };
 		B4CB358E2437D0CA005D28A8 /* EditBook.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4CB358C2437D0CA005D28A8 /* EditBook.storyboard */; };
 		B4CB35912437D538005D28A8 /* UIStoryboardSegue+RELAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B4CB35902437D538005D28A8 /* UIStoryboardSegue+RELAdditions.m */; };
+		B4CB35942437DAC8005D28A8 /* RELAddBookController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4CB35932437DAC8005D28A8 /* RELAddBookController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,6 +108,8 @@
 		B4CB358D2437D0CA005D28A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = ReadingList/Base.lproj/EditBook.storyboard; sourceTree = "<group>"; };
 		B4CB358F2437D538005D28A8 /* UIStoryboardSegue+RELAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIStoryboardSegue+RELAdditions.h"; sourceTree = "<group>"; };
 		B4CB35902437D538005D28A8 /* UIStoryboardSegue+RELAdditions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIStoryboardSegue+RELAdditions.m"; sourceTree = "<group>"; };
+		B4CB35922437DAC8005D28A8 /* RELAddBookController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RELAddBookController.h; sourceTree = "<group>"; };
+		B4CB35932437DAC8005D28A8 /* RELAddBookController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RELAddBookController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +170,8 @@
 				B44A68282436B05400809825 /* RELReadingListController.m */,
 				B44A682A2436B2BC00809825 /* RELBookDetailController.h */,
 				B44A682B2436B2BC00809825 /* RELBookDetailController.m */,
+				B4CB35922437DAC8005D28A8 /* RELAddBookController.h */,
+				B4CB35932437DAC8005D28A8 /* RELAddBookController.m */,
 				B4CB358F2437D538005D28A8 /* UIStoryboardSegue+RELAdditions.h */,
 				B4CB35902437D538005D28A8 /* UIStoryboardSegue+RELAdditions.m */,
 				B4CB35892437B6E5005D28A8 /* RELEditBookController.h */,
@@ -365,6 +370,7 @@
 				B4CB35912437D538005D28A8 /* UIStoryboardSegue+RELAdditions.m in Sources */,
 				B44A6821243694C200809825 /* main.m in Sources */,
 				B4CB358B2437B6E5005D28A8 /* RELEditBookController.m in Sources */,
+				B4CB35942437DAC8005D28A8 /* RELAddBookController.m in Sources */,
 				B44A68292436B05400809825 /* RELReadingListController.m in Sources */,
 				B44A682C2436B2BC00809825 /* RELBookDetailController.m in Sources */,
 				B44A6813243694C100809825 /* RELSceneDelegate.m in Sources */,
