@@ -32,6 +32,9 @@
 		B4CB357924379F6A005D28A8 /* RLMStoreController.h in Headers */ = {isa = PBXBuildFile; fileRef = B4CB356B24379F6A005D28A8 /* RLMStoreController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B4CB357A24379F6A005D28A8 /* RLMReadingList.h in Headers */ = {isa = PBXBuildFile; fileRef = B4CB356C24379F6A005D28A8 /* RLMReadingList.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B4CB35822437A0C3005D28A8 /* ModelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B4CB35812437A0C3005D28A8 /* ModelTests.m */; };
+		B4CB358B2437B6E5005D28A8 /* RELEditBookController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4CB358A2437B6E5005D28A8 /* RELEditBookController.m */; };
+		B4CB358E2437D0CA005D28A8 /* EditBook.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4CB358C2437D0CA005D28A8 /* EditBook.storyboard */; };
+		B4CB35912437D538005D28A8 /* UIStoryboardSegue+RELAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B4CB35902437D538005D28A8 /* UIStoryboardSegue+RELAdditions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +102,11 @@
 		B4CB357F2437A0C3005D28A8 /* ModelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ModelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4CB35812437A0C3005D28A8 /* ModelTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ModelTests.m; sourceTree = "<group>"; };
 		B4CB35832437A0C3005D28A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B4CB35892437B6E5005D28A8 /* RELEditBookController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RELEditBookController.h; sourceTree = "<group>"; };
+		B4CB358A2437B6E5005D28A8 /* RELEditBookController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RELEditBookController.m; sourceTree = "<group>"; };
+		B4CB358D2437D0CA005D28A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = ReadingList/Base.lproj/EditBook.storyboard; sourceTree = "<group>"; };
+		B4CB358F2437D538005D28A8 /* UIStoryboardSegue+RELAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIStoryboardSegue+RELAdditions.h"; sourceTree = "<group>"; };
+		B4CB35902437D538005D28A8 /* UIStoryboardSegue+RELAdditions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIStoryboardSegue+RELAdditions.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +138,7 @@
 		B44A6802243694C100809825 = {
 			isa = PBXGroup;
 			children = (
+				B4CB358C2437D0CA005D28A8 /* EditBook.storyboard */,
 				B44A680D243694C100809825 /* ReadingList */,
 				B4CB353724379D94005D28A8 /* ReadingListModel */,
 				B4CB35802437A0C3005D28A8 /* ModelTests */,
@@ -158,6 +167,10 @@
 				B44A68282436B05400809825 /* RELReadingListController.m */,
 				B44A682A2436B2BC00809825 /* RELBookDetailController.h */,
 				B44A682B2436B2BC00809825 /* RELBookDetailController.m */,
+				B4CB358F2437D538005D28A8 /* UIStoryboardSegue+RELAdditions.h */,
+				B4CB35902437D538005D28A8 /* UIStoryboardSegue+RELAdditions.m */,
+				B4CB35892437B6E5005D28A8 /* RELEditBookController.h */,
+				B4CB358A2437B6E5005D28A8 /* RELEditBookController.m */,
 				B44A6817243694C100809825 /* Main.storyboard */,
 				B44A681A243694C200809825 /* Assets.xcassets */,
 				B44A681C243694C200809825 /* LaunchScreen.storyboard */,
@@ -322,6 +335,7 @@
 				B44A681E243694C200809825 /* LaunchScreen.storyboard in Resources */,
 				B44A681B243694C200809825 /* Assets.xcassets in Resources */,
 				B44A6819243694C100809825 /* Main.storyboard in Resources */,
+				B4CB358E2437D0CA005D28A8 /* EditBook.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,7 +362,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B44A6810243694C100809825 /* RELAppDelegate.m in Sources */,
+				B4CB35912437D538005D28A8 /* UIStoryboardSegue+RELAdditions.m in Sources */,
 				B44A6821243694C200809825 /* main.m in Sources */,
+				B4CB358B2437B6E5005D28A8 /* RELEditBookController.m in Sources */,
 				B44A68292436B05400809825 /* RELReadingListController.m in Sources */,
 				B44A682C2436B2BC00809825 /* RELBookDetailController.m in Sources */,
 				B44A6813243694C100809825 /* RELSceneDelegate.m in Sources */,
@@ -406,6 +422,14 @@
 				B44A681D243694C200809825 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		B4CB358C2437D0CA005D28A8 /* EditBook.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B4CB358D2437D0CA005D28A8 /* Base */,
+			);
+			name = EditBook.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

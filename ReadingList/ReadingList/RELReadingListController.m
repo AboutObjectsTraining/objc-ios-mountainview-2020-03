@@ -19,14 +19,23 @@
     return _readingList;
 }
 
-- (IBAction)done:(UIStoryboardSegue *)segue {
-    // TODO: Update UI and save
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"Book Detail"])  {
+        RELBookDetailController *controller = segue.destinationViewController;
+        RLMBook *selectedBook = [self.readingList bookAtIndexPath:self.tableView.indexPathForSelectedRow];
+        controller.book = selectedBook;
+    } else if ([segue.identifier isEqualToString:@"Add Book"]) {
+        // TODO: figure out what to do here
+    } else {
+        NSLog(@"Unexpected segue with identifier: %@", segue.identifier);
+        abort();
+    }
 }
 
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    RELBookDetailController *controller = segue.destinationViewController;
-    RLMBook *selectedBook = [self.readingList bookAtIndexPath:self.tableView.indexPathForSelectedRow];
-    controller.book = selectedBook;
+// MARK: - Unwind segues
+- (IBAction)done:(UIStoryboardSegue *)segue {
+    [self.tableView reloadData];
+    [self.storeController saveReadingList:self.readingList];
 }
 
 // MARK: - UITableViewDataSource methods

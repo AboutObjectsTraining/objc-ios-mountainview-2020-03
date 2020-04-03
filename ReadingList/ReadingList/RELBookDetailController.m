@@ -2,6 +2,8 @@
 // See LICENSE.txt for this project's licensing information.
 
 #import "RELBookDetailController.h"
+#import "RELEditBookController.h"
+#import "UIStoryboardSegue+RELAdditions.h"
 #import <ReadingListModel/ReadingListModel.h>
 
 @interface RELBookDetailController ()
@@ -24,6 +26,12 @@
     self.lastNameLabel.text = self.book.author.lastName;
 }
 
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    RELEditBookController *controller = segue.rel_destinationViewController;
+    controller.book = self.book;
+}
+
+// MARK: Unwind segues
 - (IBAction)cancel:(UIStoryboardSegue *)sender {
     
 }
