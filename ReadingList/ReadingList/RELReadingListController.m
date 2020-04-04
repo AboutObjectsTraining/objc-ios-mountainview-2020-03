@@ -16,6 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.view.window.tintColor = [UIColor colorNamed:@"Tint Color"];
     self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 

@@ -36,6 +36,9 @@
 		B4CB358E2437D0CA005D28A8 /* EditBook.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4CB358C2437D0CA005D28A8 /* EditBook.storyboard */; };
 		B4CB35912437D538005D28A8 /* UIStoryboardSegue+RELAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B4CB35902437D538005D28A8 /* UIStoryboardSegue+RELAdditions.m */; };
 		B4CB35942437DAC8005D28A8 /* RELAddBookController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4CB35932437DAC8005D28A8 /* RELAddBookController.m */; };
+		B4CB35972437F3B2005D28A8 /* UIImageView+RELAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B4CB35962437F3B2005D28A8 /* UIImageView+RELAdditions.m */; };
+		B4CB35992437F74E005D28A8 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4CB35982437F74E005D28A8 /* Colors.xcassets */; };
+		B4CB359C2437FF98005D28A8 /* UIColor+RELAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = B4CB359B2437FF98005D28A8 /* UIColor+RELAppearance.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -110,6 +113,11 @@
 		B4CB35902437D538005D28A8 /* UIStoryboardSegue+RELAdditions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIStoryboardSegue+RELAdditions.m"; sourceTree = "<group>"; };
 		B4CB35922437DAC8005D28A8 /* RELAddBookController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RELAddBookController.h; sourceTree = "<group>"; };
 		B4CB35932437DAC8005D28A8 /* RELAddBookController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RELAddBookController.m; sourceTree = "<group>"; };
+		B4CB35952437F3B2005D28A8 /* UIImageView+RELAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImageView+RELAdditions.h"; sourceTree = "<group>"; };
+		B4CB35962437F3B2005D28A8 /* UIImageView+RELAdditions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+RELAdditions.m"; sourceTree = "<group>"; };
+		B4CB35982437F74E005D28A8 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		B4CB359A2437FF98005D28A8 /* UIColor+RELAppearance.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+RELAppearance.h"; sourceTree = "<group>"; };
+		B4CB359B2437FF98005D28A8 /* UIColor+RELAppearance.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+RELAppearance.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,12 +180,17 @@
 				B44A682B2436B2BC00809825 /* RELBookDetailController.m */,
 				B4CB35922437DAC8005D28A8 /* RELAddBookController.h */,
 				B4CB35932437DAC8005D28A8 /* RELAddBookController.m */,
-				B4CB358F2437D538005D28A8 /* UIStoryboardSegue+RELAdditions.h */,
-				B4CB35902437D538005D28A8 /* UIStoryboardSegue+RELAdditions.m */,
 				B4CB35892437B6E5005D28A8 /* RELEditBookController.h */,
 				B4CB358A2437B6E5005D28A8 /* RELEditBookController.m */,
+				B4CB358F2437D538005D28A8 /* UIStoryboardSegue+RELAdditions.h */,
+				B4CB35902437D538005D28A8 /* UIStoryboardSegue+RELAdditions.m */,
+				B4CB35952437F3B2005D28A8 /* UIImageView+RELAdditions.h */,
+				B4CB35962437F3B2005D28A8 /* UIImageView+RELAdditions.m */,
+				B4CB359A2437FF98005D28A8 /* UIColor+RELAppearance.h */,
+				B4CB359B2437FF98005D28A8 /* UIColor+RELAppearance.m */,
 				B44A6817243694C100809825 /* Main.storyboard */,
 				B44A681A243694C200809825 /* Assets.xcassets */,
+				B4CB35982437F74E005D28A8 /* Colors.xcassets */,
 				B44A681C243694C200809825 /* LaunchScreen.storyboard */,
 				B44A681F243694C200809825 /* Info.plist */,
 				B44A6820243694C200809825 /* main.m */,
@@ -337,6 +350,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4CB35992437F74E005D28A8 /* Colors.xcassets in Resources */,
 				B44A681E243694C200809825 /* LaunchScreen.storyboard in Resources */,
 				B44A681B243694C200809825 /* Assets.xcassets in Resources */,
 				B44A6819243694C100809825 /* Main.storyboard in Resources */,
@@ -366,10 +380,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4CB35972437F3B2005D28A8 /* UIImageView+RELAdditions.m in Sources */,
 				B44A6810243694C100809825 /* RELAppDelegate.m in Sources */,
 				B4CB35912437D538005D28A8 /* UIStoryboardSegue+RELAdditions.m in Sources */,
 				B44A6821243694C200809825 /* main.m in Sources */,
 				B4CB358B2437B6E5005D28A8 /* RELEditBookController.m in Sources */,
+				B4CB359C2437FF98005D28A8 /* UIColor+RELAppearance.m in Sources */,
 				B4CB35942437DAC8005D28A8 /* RELAddBookController.m in Sources */,
 				B44A68292436B05400809825 /* RELReadingListController.m in Sources */,
 				B44A682C2436B2BC00809825 /* RELBookDetailController.m in Sources */,

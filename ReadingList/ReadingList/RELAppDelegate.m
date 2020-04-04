@@ -9,6 +9,12 @@
 
 @implementation RELAppDelegate
 
+- (void)applicationDidFinishLaunching:(UIApplication *)application {
+    // FIXME: Where do we get ahold of the main window now?
+//    UIApplication.sharedApplication.keyWindow.tintColor = [UIColor colorNamed:@"Tint Color"];
+}
+
+
 #pragma mark - UISceneSession lifecycle
 
 - (UISceneConfiguration *)application:(UIApplication *)application configurationForConnectingSceneSession:(UISceneSession *)connectingSceneSession options:(UISceneConnectionOptions *)options

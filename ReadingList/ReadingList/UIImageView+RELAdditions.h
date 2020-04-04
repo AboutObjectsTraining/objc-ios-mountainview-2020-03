@@ -3,9 +3,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface RELSceneDelegate : UIResponder <UIWindowSceneDelegate>
+NS_ASSUME_NONNULL_BEGIN
 
-@property (strong, nonatomic) UIWindow *window;
+@interface UIImageView (RELAdditions)
+
+@property (nonatomic) IBInspectable CGFloat rel_cornerRadius;
 
 @end
 
+NS_ASSUME_NONNULL_END

@@ -2,6 +2,7 @@
 // See LICENSE.txt for this project's licensing information.
 
 #import "RELSceneDelegate.h"
+#import "UIColor+RELAppearance.h"
 
 @interface RELSceneDelegate ()
 
@@ -9,5 +10,17 @@
 
 @implementation RELSceneDelegate
 
+- (void)scene:(UIScene *)scene willConnectToSession:(UISceneSession *)session
+      options:(UISceneConnectionOptions *)connectionOptions {
+    
+    self.window.tintColor = UIColor.tintColor;
+    
+    UINavigationBar *navBarAppearanceProxy = UINavigationBar.appearance;
+    navBarAppearanceProxy.largeTitleTextAttributes = @{ NSForegroundColorAttributeName : UIColor.tintColor};
+    navBarAppearanceProxy.titleTextAttributes = @{ NSForegroundColorAttributeName : UIColor.tintColor};
+    
+    UITableViewCell *cellAppearanceProxy = UITableViewCell.appearance;
+    cellAppearanceProxy.backgroundColor = UIColor.cellColor;
+}
 
 @end
